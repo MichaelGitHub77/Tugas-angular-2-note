@@ -20,7 +20,7 @@ export class NoteComponent implements OnInit {
   paramfavor;
 
   ngOnInit() {}
-    FAV() {
-
+  FAV() {
+    this.router.navigate(["/fav"]);
   }
 }

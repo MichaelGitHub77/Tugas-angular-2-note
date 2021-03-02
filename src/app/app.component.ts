@@ -28,6 +28,6 @@ export class AppComponent {
     this.router.navigate(["/note"]);
   }
   FAV() {
-    this.router.navigate(["/favourite"]);
+    this.router.navigate(["/fav"]);
   }
 }

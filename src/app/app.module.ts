@@ -16,7 +16,7 @@ const ROUTES: Routes = [
 
 @NgModule({
  imports: [BrowserModule, FormsModule, RouterModule.forRoot(ROUTES)],
-  declarations: [ AppComponent, HelloComponent, NoteComponent, FavouriteComponent, FavouriteComponent],
+  declarations: [ AppComponent, HelloComponent, NoteComponent, FavouriteComponent],
   bootstrap:    [ AppComponent ],
   providers: [GlobalService]
 })
