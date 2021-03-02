@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { GlobalService } from '../global.service';
 
 @Component({
   selector: 'app-favourite',
@@ -7,7 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FavouriteComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router, public globalvar: GlobalService) {
+    this.paramjudul = this.globalvar.getJudul();
+    this.paramisi = this.globalvar.getIsi();
+    this.paramtanggal = this.globalvar.getTanggal();
+    this.paramfavor = this.globalvar.getFav();
+  }
+  paramjudul;
+  paramisi;
+  paramtanggal;
+  paramfavor;
 
   ngOnInit() {
   }

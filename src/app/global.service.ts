@@ -5,7 +5,7 @@ export class GlobalService {
   private judul: string = "";
   private isi: string = "";
   private tanggal: string = "01/01/2020";
-  private fav: Boolean = true;
+  private fav: boolean = true;
 
   constructor() {}
   public getJudul() {
@@ -19,5 +19,18 @@ export class GlobalService {
   }
   public getFav() {
     return this.fav;
+  }
+
+  public setJudul(judul1: string) {
+    this.judul = judul1;
+  }
+  public setIsi(isi1: string) {
+    this.isi = isi1;
+  }
+  public setTanggal(tanggal1: string) {
+    this.tanggal = tanggal1;
+  }
+  public setFav(fav1: boolean) {
+    this.fav = fav1;
   }
 }
