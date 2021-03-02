@@ -1,5 +1,7 @@
 import { Component, VERSION } from "@angular/core";
 import { Router } from "@angular/router";
+import { GlobalService } from "./global.service";
+
 
 @Component({
   selector: "my-app",
@@ -7,7 +9,10 @@ import { Router } from "@angular/router";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  constructor(private router: Router) {}
+  constructor(private router: Router,  public globalvar: GlobalService) {
+        this.judul = this.globalvar.getJudul();
+  }
+
   name = "Angular " + VERSION.major;
   judul = "";
   isi = "";
