@@ -1,4 +1,12 @@
-<hello name="{{ name }}"></hello>
 <p>
-  Start editing to see some magic happen :)
+	INPUT NOTE
+	<br>
+  	Judul : <input type="text" [(ngModel)]="judul"/><br>
+  Isi     : <input type="text" [(ngModel)]="isi"/><br>
+  Tanggal : <input type="date" [(ngModel)]="tanggal"/><br><br>
+  favourite : <input type="checkbox" [(ngModel)]="favor"> <br><br>
+	<button (click) = "INPUT()">INPUT</button><br><br>
+	<button (click) = "FAV()">FAVOURITE</button><br>
+
+  <router-outlet></router-outlet>
 </p>
