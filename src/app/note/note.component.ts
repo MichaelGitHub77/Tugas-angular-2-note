@@ -23,4 +23,7 @@ export class NoteComponent implements OnInit {
   FAV() {
     this.router.navigate(["/fav"]);
   }
+    Home() {
+    this.router.navigate([""]);
+  }
 }

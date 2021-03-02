@@ -1,14 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { GlobalService } from '../global.service';
+import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
+import { GlobalService } from "../global.service";
 
 @Component({
-  selector: 'app-favourite',
-  templateUrl: './favourite.component.html',
-  styleUrls: ['./favourite.component.css']
+  selector: "app-favourite",
+  templateUrl: "./favourite.component.html",
+  styleUrls: ["./favourite.component.css"]
 })
 export class FavouriteComponent implements OnInit {
-
   constructor(private router: Router, public globalvar: GlobalService) {
     this.paramjudul = this.globalvar.getJudul();
     this.paramisi = this.globalvar.getIsi();
@@ -20,7 +19,8 @@ export class FavouriteComponent implements OnInit {
   paramtanggal;
   paramfavor;
 
-  ngOnInit() {
+  ngOnInit() {}
+  Home() {
+    this.router.navigate([""]);
   }
-
 }
